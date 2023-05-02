@@ -1,0 +1,52 @@
+/****couleur general****/
+/****font****/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .logo {
+  width: 50%;
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
+
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 17px;
+  width: 100%;
+}
+
+header input::-moz-placeholder {
+  color: #353535;
+}
+
+header input::placeholder {
+  color: #353535;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+header input {
+  width: 100%;
+  border: none;
+} 
+
+/*# sourceMappingURL=style.css.map */

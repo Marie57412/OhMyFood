@@ -1,27 +1,4 @@
 @import "./Utils/_variables.scss";
-@import "./Layout/_header.scss";
 @import "./Utils/_mixins.scss";
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    @include flex;
-    
-    .location {
-        @include flex;
-        background-color: $locationback;
-    }
-    
-    label::placeholder {
-        font-weight: bold; 
-        color: $colortext;
-    }
-}
-
-.section1 {
-
-     background-color: $backgroundGrey;
-}
+@import "./Base/body.contenair.scss";
+@import "./Layout/_header.scss";
