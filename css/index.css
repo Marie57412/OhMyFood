@@ -35,6 +35,7 @@ header .location {
   padding: 17px;
   width: 100%;
 }
+
 header ::placeholder {
   color: #353535;
   font-weight: bold;
