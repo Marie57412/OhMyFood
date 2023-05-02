@@ -10,6 +10,13 @@ header {
         padding-bottom: 5px;
        
     }
+     
+    input {
+        background-color: $locationback;
+        width: 100%;
+        border: none;
+    }
+
 
     .location {
         @include flex;
@@ -18,20 +25,20 @@ header {
         width: 100%;
     }
 
-    input::placeholder {
+     ::placeholder {
         color: $colortext;
+        font-weight: bold;
     }
 
-    form{
+    .locform{
         @include flex;
         justify-content: center;
         align-items: center;
+        padding-top: 15px;
+            padding-bottom: 15px;
         width: 40%;
     }
 
-    input {
-        width: 100%;
-        border: none;
-    }
+    
 }
 
