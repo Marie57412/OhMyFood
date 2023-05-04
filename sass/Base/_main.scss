@@ -1,5 +1,8 @@
 .section1 {
     @include flex;
+    background-color: $backgroundGrey;
     flex-direction: column;
-    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 26px;
 }

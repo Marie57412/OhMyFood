@@ -10,41 +10,38 @@ header {
         padding-bottom: 5px;
     }
      
+    >.location {
+        @include flex;
+        background-color: $locationback;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 100%;
+    }
+
     input {
        background-color: $locationback;
         width: 100%;
         border: none;
         padding-left: 10px;
-        
+
+        &:focus{
+            outline: none;
+        }   
     }
     
-    input:focus{
-        outline: none;
-    }
-
-    label {
-        padding-left: 7px;
-    }
-
-    .location {
-        @include flex;
-        background-color: $locationback;
-        padding: 17px;
-        width: 100%;
-    }
-
-     ::placeholder {
-        color: $colortext;
-        font-weight: bold;
-    }
-     
     .locform{
         @include flex;
         justify-content: center;
         align-items: center;
         width: 40%;
-    }
 
-    
+        label {
+            padding-left: 7px;
+        }
+
+       ::placeholder {
+                color: $colortext;
+                font-weight: bold;
+        }
+     }
 }
-
