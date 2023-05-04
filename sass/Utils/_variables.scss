@@ -1,9 +1,14 @@
-/****couleur general****/
+/****couleur base****/
 $colortext :#353535;
 $colortitre : black;
 $backgroundGrey : #F6F6F6;
 $locationback :#EAEAEA;
 
+/***couleur principal*****/
 $primaire : #9356DC;
 $secondaire : #FF79DA;
 $tertiaire : #99E2D0;
+
+/******gradient*****/
+
+$gradient-button:linear-gradient(to top, #9356DC -14%, #FF79DA 128%)

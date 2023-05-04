@@ -3,6 +3,18 @@
     background-color: $backgroundGrey;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    padding-top: 26px;
+    padding-top: 35px;
+
+    p {   
+        padding: 10px 0 26px;
+        width: 96%;
+    }  
+
+    h2 {
+        width: 62%;
+    }
+
+    .buttonsection1 {
+        @include buttongradient;
+    }
 }
