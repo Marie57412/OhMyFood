@@ -62,23 +62,7 @@ header .locform ::placeholder {
   font-weight: bold;
 }
 
-.section1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F6F6F6;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 35px;
-}
-.section1 p {
-  padding: 10px 0 26px;
-  width: 96%;
-}
-.section1 h2 {
-  width: 62%;
-}
-.section1 .buttonsection1 {
+.buttonsection1 {
   color: white;
   border: none;
   border-radius: 25px;
@@ -92,8 +76,49 @@ header .locform ::placeholder {
   width: 59%;
 }
 
-.fonctionnement h2 {
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 35px;
+}
+.section1 p {
+  padding: 10px 0 26px;
+  width: 96%;
+}
+.section1 h2 {
+  width: 62%;
+}
+
+.fonctionnement {
+  position: relative;
   padding: 48px 20px 26px;
+}
+.fonctionnement h2 {
+  margin-top: 0;
+}
+.fonctionnement ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.fonctionnement li {
+  background-color: #F7F7F7;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 16px 0px 16px 12px;
+  width: 79%;
+}
+.fonctionnement i {
+  font-size: 21px;
+  margin-right: 23px;
+  margin-left: 5px;
+  color: grey;
 }
 
 /*# sourceMappingURL=index.css.map */
