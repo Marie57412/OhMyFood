@@ -99,6 +99,7 @@ header .locform ::placeholder {
 }
 .fonctionnement h2 {
   margin-top: 0;
+  margin-bottom: 26px;
 }
 .fonctionnement ol {
   margin: 0px;
