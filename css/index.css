@@ -17,6 +17,10 @@ h2, h3, p {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  object-fit: cover;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -121,6 +125,62 @@ header .locform ::placeholder {
   margin-right: 23px;
   margin-left: 5px;
   color: grey;
+}
+
+.restaurant {
+  padding: 0px;
+  background-color: #F7F7F7;
+}
+.restaurant .titrerestaurants {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+.restaurant .contenairRestaurant {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .contenairRestaurant .cardRestaurant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 18px;
+}
+.restaurant .contenairRestaurant .cardRestaurant .card {
+  text-decoration: none;
+  color: black;
+}
+.restaurant .contenairRestaurant img {
+  height: 65%;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.restaurant .contenairRestaurant .cardcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-right: 33px;
+  padding-top: 16px;
+}
+.restaurant .contenairRestaurant .restaurantTextcontent h2 {
+  font-size: 18px;
+}
+.restaurant .contenairRestaurant .restaurantTextcontent p {
+  padding-top: 5px;
+  padding-bottom: 12px;
+  font-size: 17px;
+}
+.restaurant .contenairRestaurant .restaurantTextcontent .heart {
+  background-color: white;
+  border: 1px solid #101010;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=index.css.map */
