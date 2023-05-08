@@ -6,7 +6,7 @@
 }
 
 @mixin buttongradient {
-    color: white;
+    color: $white;
     border: none;
     border-radius: 25px;
     background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);

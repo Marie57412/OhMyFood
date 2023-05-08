@@ -17,7 +17,7 @@
          @include flex;
         flex-direction: column;
         border-radius: 15px;
-        background-color: white;
+        background-color: $white;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         width: 100%;
         margin-bottom: 18px;
@@ -60,7 +60,7 @@
          }
 
      .heart {
-        background-color: white;
+        background-color: $white;
         border: 1px solid #101010;
         font-size: 25px;
      }    
