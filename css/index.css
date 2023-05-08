@@ -95,15 +95,12 @@ header .locform ::placeholder {
   flex-direction: column;
 }
 .restaurant .cardRestaurant {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   margin-bottom: 18px;
+  height: 250px;
 }
 .restaurant .card {
   text-decoration: none;
