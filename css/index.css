@@ -180,6 +180,9 @@ header .locform ::placeholder {
   margin-left: 5px;
   color: grey;
 }
+.fonctionnement i .fa-store {
+  color: #9356DC;
+}
 .fonctionnement .chiffre {
   display: flex;
   align-items: center;

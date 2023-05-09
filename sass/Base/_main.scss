@@ -49,7 +49,12 @@
         margin-right: 23px;
         margin-left: 5px;
         color: grey;
+
+        .fa-store {
+            color: $primaire;
+        }
     }
+     
 
     .chiffre {
         @include flex;
