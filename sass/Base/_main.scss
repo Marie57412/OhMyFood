@@ -50,11 +50,11 @@
         margin-left: 5px;
         color: grey;
 
-        .fa-store {
-            color: $primaire;
-        }
     }
      
+    .fa-store {
+            color: $primaire;
+    }
 
     .chiffre {
         @include flex;
