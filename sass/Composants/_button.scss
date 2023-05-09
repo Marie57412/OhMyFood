@@ -1,3 +1,7 @@
 .buttonsection1 {
     @include buttongradient;
+    transition: all;
+    &:hover{
+        
+    }
 }
