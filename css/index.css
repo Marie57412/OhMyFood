@@ -41,17 +41,20 @@ header > .location {
   padding-top: 17px;
   padding-bottom: 17px;
   width: 100%;
+  box-shadow: inset 0em 5px 4px rgba(0, 0, 0, 0.15);
 }
-header input {
+
+input {
   background-color: #EAEAEA;
   width: 100%;
   border: none;
   padding-left: 10px;
 }
-header input:focus {
+input:focus {
   outline: none;
 }
-header .locform {
+
+.locform {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,10 +62,10 @@ header .locform {
   align-items: center;
   width: 40%;
 }
-header .locform label {
+.locform label {
   padding-left: 7px;
 }
-header .locform ::placeholder {
+.locform ::placeholder {
   color: #353535;
   font-weight: bold;
 }
@@ -80,11 +83,11 @@ header .locform ::placeholder {
   margin-bottom: 57px;
   width: 59%;
   cursor: pointer;
-  transition: opacity 600ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .buttonsection1:hover {
   opacity: 0.8;
-  box-shadow: 0px 7px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .restaurant {
@@ -101,6 +104,7 @@ header .locform ::placeholder {
   flex-direction: column;
 }
 .restaurant .cardRestaurant {
+  position: relative;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -111,6 +115,22 @@ header .locform ::placeholder {
 .restaurant .card {
   text-decoration: none;
   color: black;
+}
+.restaurant .nouveau::after {
+  content: "Nouveau";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+  right: 15px;
+  top: 14px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .restaurant img {
   height: 65%;
@@ -134,10 +154,20 @@ header .locform ::placeholder {
   padding-bottom: 12px;
   font-size: 17px;
 }
-.restaurant .restaurantTextcontent .heart {
-  background-color: white;
-  border: 1px solid #101010;
-  font-size: 25px;
+
+.heart i {
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px black;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart i:active {
+  -webkit-text-stroke: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .section1 {
@@ -155,6 +185,15 @@ header .locform ::placeholder {
 }
 .section1 h2 {
   width: 62%;
+}
+@media (min-width: 1024px) {
+  .section1 h2 {
+    font-size: 40px;
+    width: 70%;
+  }
+  .section1 p {
+    font-size: 18px;
+  }
 }
 
 .fonctionnement {

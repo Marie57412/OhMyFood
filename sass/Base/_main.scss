@@ -13,6 +13,16 @@
     h2 {
         width: 62%;
     }
+    @media (min-width: 1024px) {
+        h2 {
+            font-size: 40px;
+            width: 70%;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
 
     
 }
