@@ -11,6 +11,7 @@
       padding: 15px;
       display: flex;
        flex-direction: column;
+
     }
 
        .cardRestaurant {
@@ -73,9 +74,37 @@
            font-size: 17px;
          }
      }
+    }
+
+     @media screen and (min-width:1024px){
+      .restaurant{
+
+           @include flex;
+        
+        .contenairRestaurant {
+              
+
+        }
+         
+        .cardcontenair {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-bottom: 30px;
+          margin-top: 28px;
+
+        }
+        .cardRestaurant {
+          width: 47%;
+          height: 251px;
+          margin-bottom: 57px;
+        }
+    
+    }
+  }
 
 
-     }
 
 
  

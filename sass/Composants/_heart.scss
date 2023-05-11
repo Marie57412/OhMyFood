@@ -7,8 +7,10 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      transition: all 600ms ease-in-out;
   
-    &:active {
+    &:hover {
+      transform: scale(1.1);
       -webkit-text-stroke: white;
       background: $buttongradient;
       background-clip: text;

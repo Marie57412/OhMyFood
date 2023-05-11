@@ -37,4 +37,26 @@ footer {
         }
     }
 
+    @media screen and (min-width: 1024px) {
+
+        footer {
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: center;
+
+           .footertitle {
+                margin-top: 13px;
+                margin-left: 10px;
+           }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 22px;
+            }
+
+        }
+        
+    }
+
     
