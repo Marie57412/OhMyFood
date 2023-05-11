@@ -5,6 +5,11 @@
     
 }
 
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
 @mixin buttongradient {
     color: $white;
     border: none;

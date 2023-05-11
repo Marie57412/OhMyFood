@@ -50,8 +50,7 @@ footer {
            }
 
             ul {
-                display: flex;
-                flex-direction: row;
+                @include row;
                 gap: 22px;
             }
 

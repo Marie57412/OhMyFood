@@ -86,8 +86,7 @@
         }
         
         ol {
-            display: flex;
-            flex-direction: row;
+            @include row;
             width: 75%;
             margin-left: 14%;
             gap: 35px;
