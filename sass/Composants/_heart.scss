@@ -4,22 +4,28 @@
       font-size: 1.5rem;
       -webkit-text-stroke: 1px black;
       background:white;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: all 500ms ease-in-out;
+      
+  
+    &:hover {
+      -webkit-text-stroke: white;
+      background: $buttongradient;
+      background: -webkit-$buttongradient ;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: all 600ms ease-in-out;
-  
-    &:hover {
-      transform: scale(1.1);
-      -webkit-text-stroke: white;
-      background: $buttongradient;
-      background-clip: text;
-      -webkit-background-clip: text;
-       
+      cursor: pointer; 
+      
        }    
-  }
+
 
     }
+    
+  }
+
  
 
 

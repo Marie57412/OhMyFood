@@ -17,3 +17,15 @@
         }
 }
 
+.buttoncommander {
+    @include buttongradient;
+    margin-top: 40px;
+    margin-left: 20%;
+
+    @media screen and (min-width: 1440px) {
+        width: 33%;
+        margin-left: 212px;
+        
+    }
+}
+

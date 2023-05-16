@@ -9,6 +9,11 @@ body {
   padding: 0;
   background-color: #F7F7F7;
 }
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
+}
 
 h1 {
   font-family: "Shrikhand", sans-serif;
@@ -28,6 +33,52 @@ a {
   color: black;
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent #9356DC #FF79DA;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -123,6 +174,34 @@ input:focus {
     width: 18%;
   }
 }
+.buttoncommander {
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
+  font-size: 16px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 57px;
+  width: 59%;
+  cursor: pointer;
+  transition: opacity 500ms ease-in-out;
+  margin-top: 40px;
+  margin-left: 20%;
+}
+.buttoncommander:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+@media screen and (min-width: 1440px) {
+  .buttoncommander {
+    width: 33%;
+    margin-left: 212px;
+  }
+}
+
 .restaurant {
   padding: 0px;
 }
@@ -207,17 +286,19 @@ input:focus {
   font-size: 1.5rem;
   -webkit-text-stroke: 1px black;
   background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: all 500ms ease-in-out;
+}
+.heart i:hover {
+  -webkit-text-stroke: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit- linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 600ms ease-in-out;
-}
-.heart i:hover {
-  transform: scale(1.1);
-  -webkit-text-stroke: white;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 .section1 {
@@ -309,23 +390,40 @@ input:focus {
   border-radius: 50px 50px 0 0;
   margin-bottom: -57px;
 }
-.backcolor .titlemenu {
+@media screen and (min-width: 1024px) {
+  .backcolor {
+    margin-left: 193px;
+    margin-right: 193px;
+  }
+}
+
+.titlemenu {
   font-style: italic;
   font-size: 28px;
   font-weight: 400;
   margin-top: 32px;
   margin-left: 17px;
 }
-.backcolor .intromenu {
+
+.intromenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 32px 17px 42px 0;
 }
-.backcolor .heart {
+@media screen and (min-width: 1024px) {
+  .intromenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.heart {
   margin-top: 12px;
 }
-.backcolor .heart i {
+.heart i {
   font-size: 1.5rem;
   -webkit-text-stroke: 1px black;
   background: #F7F7F7;
@@ -334,7 +432,7 @@ input:focus {
   -webkit-text-fill-color: transparent;
   transition: all 600ms ease-in-out;
 }
-.backcolor .heart i:hover {
+.heart i:hover {
   transform: scale(1.1);
   -webkit-text-stroke: #F7F7F7;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -345,6 +443,12 @@ input:focus {
 .menupage {
   margin-left: 13px;
   margin-right: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .menupage {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
 }
 .menupage .titlerepas {
   font-weight: 300;
@@ -375,26 +479,23 @@ input:focus {
   padding-top: 5px;
 }
 
-.buttoncommander {
+.formconfirm .confirm i {
   color: white;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(to top, #9356DC -14%, #FF79DA 128%);
-  font-size: 16px;
-  text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 57px;
-  width: 59%;
-  cursor: pointer;
-  transition: opacity 500ms ease-in-out;
-  margin-top: 40px;
-  margin-left: 20%;
 }
-.buttoncommander:hover {
-  opacity: 0.8;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+.formconfirm .confirm:hover {
+  position: absolute;
+  background-color: #99E2D0;
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formconfirm .confirm:hover i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -404,6 +505,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: -72px;
+  }
 }
 footer .footertitle {
   color: white;

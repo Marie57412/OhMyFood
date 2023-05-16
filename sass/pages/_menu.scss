@@ -5,7 +5,14 @@
     position: relative;
     top: -73px;
     border-radius: 50px 50px 0 0;
-    margin-bottom: -57px;
+    margin-bottom: -57px; 
+
+    @media  screen and (min-width: 1024px) {
+    margin-left: 193px;
+     margin-right: 193px;
+      
+    }
+  } 
 
     .titlemenu{
         font-style: italic;
@@ -20,6 +27,12 @@
         justify-content: space-between;
         align-items: center;
         margin: 32px 17px 42px 0;
+
+        @media screen and (min-width: 1024px) {
+
+            @include flex;
+            gap: 24px;
+        }
     }
 
    .heart {
@@ -43,11 +56,17 @@
          }    
       }
   }
-}
+
 .menupage {
 
     margin-left: 13px;
     margin-right: 13px;
+
+    @media screen and (min-width: 1024px) {
+       margin-left: 165px;
+       margin-right: 165px;
+      
+    }
 
   .titlerepas {
     font-weight: 300;
@@ -73,17 +92,42 @@
         font-size: 14px;
         padding: 12px 14px 12px 15px;
         margin-bottom: 12px;
+       
         
         .contentbutton {
             display: flex;
             justify-content: space-between;
             padding-top: 5px;
         }
-    }
-}
 
-.buttoncommander {
-    @include buttongradient;
-    margin-top: 40px;
-    margin-left: 20%;
-}
+      
+       }
+
+    }
+
+  .formconfirm {
+    
+     .confirm {
+        i {
+         color: $white;
+       }
+     
+      &:hover { 
+        position: absolute;
+        background-color: $tertiaire;
+        background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            
+          i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+          }
+      }
+    }
+  }

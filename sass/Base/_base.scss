@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: $backgroundGrey;
+    @media screen and (min-width: 1024px) {
+      background-color: $white;
+      
+    }
 }
 
 h1 {
