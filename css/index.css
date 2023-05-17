@@ -250,7 +250,7 @@ input:focus {
   align-items: center;
   justify-content: space-between;
   padding-left: 13px;
-  padding-right: 33px;
+  padding-right: 56px;
   padding-top: 16px;
 }
 .restaurant .restaurantTextcontent h2 {
@@ -282,23 +282,32 @@ input:focus {
     margin-bottom: 57px;
   }
 }
-.heart i {
-  font-size: 1.5rem;
-  -webkit-text-stroke: 1px black;
-  background: white;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: all 500ms ease-in-out;
+.heart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  font-size: 22px;
 }
-.heart i:hover {
-  -webkit-text-stroke: white;
+.heart .nofull {
+  position: absolute;
+  color: black;
+}
+.heart .full {
+  position: absolute;
+  opacity: 0;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background: -webkit- linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+  color: transparent;
+  transition: all 500ms;
+}
+.heart:hover .full {
+  opacity: 1;
+}
+.heart:hover .empty {
+  opacity: 0;
 }
 
 .section1 {
@@ -421,23 +430,7 @@ input:focus {
 }
 
 .heart {
-  margin-top: 12px;
-}
-.heart i {
-  font-size: 1.5rem;
-  -webkit-text-stroke: 1px black;
-  background: #F7F7F7;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 600ms ease-in-out;
-}
-.heart i:hover {
-  transform: scale(1.1);
-  -webkit-text-stroke: #F7F7F7;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
+  margin-right: 12px;
 }
 
 .menupage {
