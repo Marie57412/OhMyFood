@@ -213,6 +213,7 @@ input:focus {
   transition: opacity 500ms ease-in-out;
   margin-top: 40px;
   margin-left: 20%;
+  margin-bottom: 100px;
 }
 .buttoncommander:hover {
   opacity: 0.8;
@@ -222,6 +223,7 @@ input:focus {
   .buttoncommander {
     width: 33%;
     margin-left: 30%;
+    margin-bottom: 100px;
   }
 }
 
