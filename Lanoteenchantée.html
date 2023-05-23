@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
  <body>
+           <div class="loadcontent">
+              <span class="loader"></span>
+          </div>
 
     <header>
        <div class="fleche">
@@ -24,11 +27,12 @@
     </header>
       <div class="backcolor">
          <section class="intromenu">
-             <h1 class="titlemenu">La note enchantée</h1>
-             <div class="heart">
-              <i class="fa-solid fa-heart"></i>
-            </div>   
-          </section>
+            <h1 class="titlemenu">La note enchantée</h1>
+            <div class="heart">
+               <i class="fa-regular fa-heart nofull"></i>
+               <i class="fa-solid fa-heart full"></i>
+           </div>   
+         </section>
 
           <section class="menupage">
                 <div>
@@ -37,34 +41,54 @@
                 </div>
 
                 <div class="contourbutton">
-                     <div class="menubutton">
-                             <h3>Ravioles de foie gras</h3>
-                               <div class="contentbutton">  
+                      <div class="menubutton animbutton">
+                              <div class="textmenu">
+                                  <h3>Ravioles de foie gras </h3>
                                   <p>Accompagnées de leur crème à la truffe</p>
-                                  <p><strong>25€</strong></p>
-                               </div>       
-                     </div>
-                     <div class="menubutton">
-                             <h3>Caviar osciètre</h3>
-                             <div class="contentbutton">  
+                              </div>
+                               <div class="contentbutton">
+                                <p class="price"><strong>25€</strong></p>
+                                <div class="formconfirm">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>  
+                              </div>  
+                        </div>
+                      <div class="menubutton animbutton">
+                            <div class="textmenu">
+                               <h3>Caviar osciètre </h3>
                                <p>Sur blini à la farine de blé noir</p>
-                               <p><strong>35€</strong></p>
+                            </div>
+                             <div class="contentbutton">  
+                               <p class="price"><strong>35€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                             </div>       
                       </div>
-                      <div class="menubutton">
-                             <h3>Homard et espuma de potiron</h3>
+                      <div class="menubutton animbutton">
+                            <div class="textmenu">
+                              <h3>Homard et espuma de potiron</h3>
+                              <p>Marinés aux zestes d'orange</p>
+                           </div>
                              <div class="contentbutton">  
-                               <p>Marinés aux zestes d'orange</p>
-                               <p><strong>20€</strong></p>
+                               <p class="price"><strong>20€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                              </div>       
                        </div>
-                       <div class="menubutton">
-                        <h3>Foie gras de canard cuit entier</h3>
-                        <div class="contentbutton">  
+                       <div class="menubutton animbutton">
+                        <div class="textmenu">
+                          <h3>Foie gras de canard cuit entier</h3>
                           <p>Confiture de figue et pain toasté</p>
-                          <p><strong>35€</strong></p>
-                       </div>       
-                 </div>
+                       </div>
+                         <div class="contentbutton">  
+                           <p class="price"><strong>35€</strong></p>
+                           <div class="formconfirm">
+                             <i class="fa-solid fa-check"></i>
+                           </div>
+                         </div>       
+                   </div>
                 </div>
 
                  <div>
@@ -72,25 +96,40 @@
                     <div class="linegreen"></div>
                  </div>
                 <div class="contourbutton">
-                  <div class="menubutton">
+                  <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Noix de coquilles Saint-Jacques</h3>
+                          <p>Sur lit de purée de céleri-rave</p>
+                        </div>  
                             <div class="contentbutton">  
-                               <p>Sur lit de purée de céleri-rave</p>
-                               <p><strong>40€</strong></p>
+                               <p class="price"><strong>40€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                             </div>       
                   </div>
-                  <div class="menubutton">
+                  <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Langoustine poêlée</h3>
+                          <p>Purée de patate douce</p>
+                        </div>  
                           <div class="contentbutton">  
-                            <p>Purée de patate douce</p>
-                            <p><strong>35€</strong></p>
+                            <p class="price"><strong>35€</strong></p>
+                            <div class="formconfirm">
+                              <i class="fa-solid fa-check"></i>
+                            </div>
                          </div>       
                    </div>
-                   <div class="menubutton">
+                   <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Mijoté de queue de bœuf </h3>
+                          <p>Et riz sauvage aux zestes de citron</p>
+                        </div>  
                           <div class="contentbutton">  
-                            <p>Et riz sauvage aux zestes de citron</p>
-                            <p><strong>45€</strong></p>
+                               <p class="price"><strong>45€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                           </div>       
                     </div>
              </div>
@@ -100,25 +139,40 @@
            </div>
 
            <div class="contourbutton">
-                <div class="menubutton">
+                <div class="menubutton animbutton">
+                     <div class="textmenu">
                         <h3>Macaron noisette et chocolat</h3>
+                        <p>Glace au caramel brun et sel de Guérande</p>
+                     </div>   
                           <div class="contentbutton">  
-                             <p>Glace au caramel brun et sel de Guérande</p>
-                             <p><strong>18€</strong></p>
+                             <p class="price"><strong>18€</strong></p>
+                             <div class="formconfirm">
+                              <i class="fa-solid fa-check"></i>
+                             </div>
                           </div>       
                 </div>
-                <div class="menubutton">
-                        <h3>Baba au rhum revisité</h3>
+                <div class="menubutton animbutton">
+                      <div class="textmenu">
+                        <h3>Baba au rhum revisité </h3>
+                        <p>Avec son coulis de citron</p>
+                     </div>   
                         <div class="contentbutton">  
-                          <p>Avec son coulis de citron</p>
-                          <p><strong>22€</strong></p>
+                          <p class="price"><strong>22€</strong></p>
+                          <div class="formconfirm">
+                           <i class="fa-solid fa-check"></i>
+                          </div>
                        </div>       
                  </div>
-                 <div class="menubutton">
-                        <h3>Tarte au citron meringuée</h3>
+                 <div class="menubutton animbutton">
+                      <div class="textmenu">
+                        <h3>Tarte au citron meringuée </h3>
+                        <p>Déstructurée</p>
+                      </div>  
                         <div class="contentbutton">  
-                          <p>Déstructurée</p>
-                          <p><strong>23€</strong></p>
+                          <p class="price"><strong>23€</strong></p>
+                          <div class="formconfirm">
+                           <i class="fa-solid fa-check"></i>
+                          </div>
                         </div>       
                   </div>
             </div>
@@ -136,4 +190,5 @@
             <li><a href="mailto:example@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
- </body>          
+ </body>           
+ </html>

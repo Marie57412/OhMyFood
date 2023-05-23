@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
  <body>
-
+      <div class="loadcontent">
+          <span class="loader"></span>
+      </div>
     <header>
        <div class="fleche">
           <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -24,11 +26,12 @@
     </header>
       <div class="backcolor">
          <section class="intromenu">
-             <h1 class="titlemenu">À la française</h1>
-             <div class="heart">
-              <i class="fa-solid fa-heart"></i>
-            </div>   
-          </section>
+            <h1 class="titlemenu">À la française</h1>
+            <div class="heart">
+               <i class="fa-regular fa-heart nofull"></i>
+               <i class="fa-solid fa-heart full"></i>
+           </div>   
+         </section>
 
           <section class="menupage">
                 <div>
@@ -37,25 +40,40 @@
                 </div>
 
                 <div class="contourbutton">
-                     <div class="menubutton">
-                             <h3>Tartare de poulpe acidulé</h3>
-                               <div class="contentbutton">  
+                      <div class="menubutton animbutton">
+                              <div class="textmenu">
+                                  <h3>Tartare de poulpe acidulé</h3>
                                   <p>Aux zestes d'orange</p>
-                                  <p><strong>25€</strong></p>
-                               </div>       
-                     </div>
-                     <div class="menubutton">
-                             <h3>Velouté de légumes d'antan</h3>
-                             <div class="contentbutton">  
+                              </div>
+                               <div class="contentbutton">
+                                <p class="price"><strong>25€</strong></p>
+                                <div class="formconfirm">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>  
+                              </div>  
+                        </div>
+                      <div class="menubutton animbutton">
+                            <div class="textmenu">
+                               <h3>Velouté de légumes d'antan</h3>
                                <p>Carotte, panais, topinambour</p>
-                               <p><strong>35€</strong></p>
+                            </div>
+                             <div class="contentbutton">  
+                               <p class="price"><strong>35€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                             </div>       
                       </div>
-                      <div class="menubutton">
-                             <h3>Soupe à l'oignon</h3>
+                      <div class="menubutton animbutton">
+                            <div class="textmenu">
+                              <h3>Soupe à l'oignon</h3>
+                              <p>Revisitée</p>
+                           </div>
                              <div class="contentbutton">  
-                               <p>Revisitée</p>
-                               <p><strong>20€</strong></p>
+                               <p class="price"><strong>20€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                              </div>       
                        </div>
                 </div>
@@ -65,25 +83,40 @@
                     <div class="linegreen"></div>
                  </div>
                 <div class="contourbutton">
-                  <div class="menubutton">
+                  <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Coquilles Saint-Jacques</h3>
+                          <p>Accompagnées d'une purée de panais</p>
+                        </div>  
                             <div class="contentbutton">  
-                               <p>Accompagnées d'une purée de panais</p>
-                               <p><strong>40€</strong></p>
+                               <p class="price"><strong>40€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                             </div>       
                   </div>
-                  <div class="menubutton">
+                  <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Magret de canard</h3>
+                          <p>Et parmentier de pommes de terre</p>
+                        </div>  
                           <div class="contentbutton">  
-                            <p>Et parmentier de pommes de terre</p>
-                            <p><strong>35€</strong></p>
+                            <p class="price"><strong>35€</strong></p>
+                            <div class="formconfirm">
+                              <i class="fa-solid fa-check"></i>
+                            </div>
                          </div>       
                    </div>
-                   <div class="menubutton">
+                   <div class="menubutton animbutton">
+                        <div class="textmenu">
                           <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                          <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>  
                           <div class="contentbutton">  
-                            <p>Sur son lit de gnocchis aux légumes</p>
-                            <p><strong>44€</strong></p>
+                               <p class="price"><strong>44€</strong></p>
+                               <div class="formconfirm">
+                                 <i class="fa-solid fa-check"></i>
+                               </div>
                           </div>       
                     </div>
              </div>
@@ -93,25 +126,40 @@
            </div>
 
            <div class="contourbutton">
-                <div class="menubutton">
+                <div class="menubutton animbutton">
+                     <div class="textmenu">
                         <h3>Pétales de violettes glacés</h3>
+                        <p>Et purée de noisettes</p>
+                     </div>   
                           <div class="contentbutton">  
-                             <p>Et purée de noisettes</p>
-                             <p><strong>18€</strong></p>
+                             <p class="price"><strong>18€</strong></p>
+                             <div class="formconfirm">
+                              <i class="fa-solid fa-check"></i>
+                             </div>
                           </div>       
                 </div>
-                <div class="menubutton">
+                <div class="menubutton animbutton">
+                      <div class="textmenu">
                         <h3>Fondant au chocolat</h3>
+                        <p>Revisité</p>
+                     </div>   
                         <div class="contentbutton">  
-                          <p>Revisité</p>
-                          <p><strong>22€</strong></p>
+                          <p class="price"><strong>22€</strong></p>
+                          <div class="formconfirm">
+                           <i class="fa-solid fa-check"></i>
+                          </div>
                        </div>       
                  </div>
-                 <div class="menubutton">
+                 <div class="menubutton animbutton">
+                      <div class="textmenu">
                         <h3>Millefeuille croustillant</h3>
+                        <p>Myrtilles et pâte d’amande</p>
+                      </div>  
                         <div class="contentbutton">  
-                          <p>Myrtilles et pâte d’amande</p>
-                          <p><strong>23€</strong></p>
+                          <p class="price"><strong>23€</strong></p>
+                          <div class="formconfirm">
+                           <i class="fa-solid fa-check"></i>
+                          </div>
                         </div>       
                   </div>
             </div>
@@ -129,5 +177,5 @@
             <li><a href="mailto:example@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
- </body>          
-
+ </body>           
+ </html>

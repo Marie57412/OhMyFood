@@ -28,7 +28,8 @@
 }
 
 .fonctionnement {
-       padding: 48px 20px 26px;
+      background: $white;
+       padding: 48px 20px 68px;
     
      h2 {
         margin-top: 0;
@@ -80,6 +81,7 @@
 @media screen and (min-width:1024px){
    
       .fonctionnement {
+        
 
         h2 {
             margin-left: 14%;
