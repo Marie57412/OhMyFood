@@ -72,98 +72,110 @@
 .contourbutton {
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-.menubutton {
-      position: relative;
-      display: flex;
-      margin-top: 12px;
-      height: 45px;
-       background-color: $white;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-      border-radius: 15px;
-      font-size: 14px;
-      padding: 15px 0px 15px 15px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-  
-      }
-  
-.contentbutton{
-  
-  display: flex;
-  align-items: center;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  right: -60px;
-  transition: right 0.3s ease-in;
-  overflow: hidden;
 }
 
+
+
+.contentbutton {
+    
+  display: flex;
+  margin-right: -2px;
+
+}
 
   
 .textmenu {
- 
+  &:hover {
+    width: 238px;
+  }
  
   p {
     font-size: 14px;
     padding-bottom: 8px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-     width: 100%;
-  &:active{
-     width: 60%;
-    
-  }
+    white-space: nowrap;
     
   }
   h3 {
     font-size: 17px;
     padding-bottom: 5px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-     width: 100%;
-  &:active{
-     width: 60%;
+    white-space: nowrap;
      
-  }
-   
  }
+}
+.price {
+  margin-right: 15px;
+margin-top: 29px;
+margin-left: -40px;
+}
+
+.menubutton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  height: 45px;
+   background-color: $white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-size: 14px;
+  padding: 15px 0px 15px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+    }
+
+
+
+.formconfirm {
+  @include flex;
+      
+     background-color: #99E2D0;
+     font-size: 18px;
+     color: white;
+     height: 77px;
+     width: 60px;
+     margin-top: -16px;
+     border-radius: 0 15px 15px 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: -59px;
+     animation: check;
+     transition:  600ms ease-in-out;
+      
+    }
+
+@keyframes check {
+  from {
+    opacity: 0;
+  
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+   
+
+
+.menubutton:hover {
+  .formconfirm {
+        
+        margin-right: -2px;
+           
+    }
 }
 
 
-.formconfirm{
-  @include flex;
-        position: relative;
-        top: 0px;
-        width: 59px;
-        height: 100%;
-        background: #99E2D0;
-        border-radius:0 15px 15px 0;
 
-        i {
-          @include flex;
-          width: 20px;
-          height: 20px;
-          background-color: $white;
-          color: $tertiaire;
-          border-radius: 50%;
-        }
-}    
-      
-  .price {
-    position: relative;
-    margin-right: 15px;
-    margin-top: 35px;
-  }
+  
 
-  .menubutton:active .contentbutton{
-    right: 0%;
-  }
+
+  
 
     
   .anim1 {
