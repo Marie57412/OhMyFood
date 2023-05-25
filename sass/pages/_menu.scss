@@ -85,8 +85,10 @@
 
   
 .textmenu {
-  &:hover {
-    width: 238px;
+   
+ 
+   &:hover {
+    width: 230px;
   }
  
   p {
@@ -95,6 +97,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  
     
   }
   h3 {
@@ -103,6 +106,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    
      
  }
 }
@@ -123,7 +127,8 @@ margin-left: -40px;
   font-size: 14px;
   padding: 15px 0px 15px 15px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  
+
 
     }
 
