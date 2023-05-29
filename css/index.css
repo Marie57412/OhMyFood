@@ -331,9 +331,6 @@ input:focus {
 .heart:hover .full {
   opacity: 1;
 }
-.heart:hover .empty {
-  opacity: 0;
-}
 
 .section1 {
   display: flex;
