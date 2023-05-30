@@ -490,9 +490,14 @@ input:focus {
 
 .contentbutton {
   display: flex;
-  margin-right: -2px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
+.textmenu {
+  overflow: hidden;
+}
 .textmenu:hover {
   width: 230px;
 }
@@ -514,7 +519,6 @@ input:focus {
 .price {
   margin-right: 15px;
   margin-top: 29px;
-  margin-left: -40px;
 }
 
 .menubutton {
@@ -534,17 +538,17 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   font-size: 18px;
   color: white;
   height: 77px;
-  width: 60px;
+  width: 0;
+  overflow: hidden;
   margin-top: -16px;
   border-radius: 0 15px 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -59px;
   animation: check;
   transition: 600ms ease-in-out;
 }
@@ -558,19 +562,19 @@ input:focus {
   }
 }
 .menubutton:hover .formconfirm {
-  margin-right: -2px;
+  width: 60px;
 }
 
 .anim1 {
-  animation: animbutton 3.5s;
+  animation: animbutton 2.5s;
 }
 
 .anim2 {
-  animation: animbutton 4.5s;
+  animation: animbutton 3.5s;
 }
 
 .anim3 {
-  animation: animbutton 5.5s;
+  animation: animbutton 4.5s;
 }
 
 @keyframes animbutton {
